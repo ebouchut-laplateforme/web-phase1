@@ -1,0 +1,20 @@
+/*
+  ~~~~~~~~~~~~~~~~~~~~~~~~~
+  Top navigation Bar
+  ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/**
+ * Display the top navigation links horizontally
+ */
+header > nav ul li {
+  display: inline;
+}
+
+/**
+ * Separate the top navigation links with a pipe character.
+ TODO: Badly need a more Sassy way to do this later on ;-).
+ TODO: Rewrite the selector to Exclude the last nav list item .
+ */
+header > nav ul li::after {
+  content: " | ";
+}
