@@ -1,0 +1,40 @@
+/**
+ * Define the main colors
+ */
+body {
+  --cv-primary-color: #4a6a89;
+  --cv-secondary-color: #eeeeee;
+}
+
+/*
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~
+ * Top navigation Bar
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+.top-nav {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--cv-primary-color);
+  color: var(--cv-secondary-color);;
+}
+
+.top-nav li {
+  gap: 100px;
+  margin-right: 20px;
+
+  list-style-type: none;
+}
+
+.top-nav a {
+  color: var(--cv-secondary-color);
+}
+
+main h1 {
+  text-align: center;
+}
+
+.contact address {
+  display: flex;
+  justify-content: space-evenly;
+}
