@@ -1,20 +1,40 @@
-/*
-  ~~~~~~~~~~~~~~~~~~~~~~~~~
-  Top navigation Bar
-  ~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
 /**
- * Display the top navigation links horizontally
+ * Define the main colors
  */
-header > nav ul li {
-  display: inline;
+body {
+  --cv-primary-color: #4a6a89;
+  --cv-secondary-color: #eeeeee;
 }
 
-/**
- * Separate the top navigation links with a pipe character.
- TODO: Badly need a more Sassy way to do this later on ;-).
- TODO: Rewrite the selector to Exclude the last nav list item .
+/*
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~
+ * Top navigation Bar
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~
  */
-header > nav ul li::after {
-  content: " | ";
+.top-nav {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--cv-primary-color);
+  color: var(--cv-secondary-color);;
+}
+
+.top-nav li {
+  gap: 100px;
+  margin-right: 20px;
+
+  list-style-type: none;
+}
+
+.top-nav a {
+  color: var(--cv-secondary-color);
+}
+
+main h1 {
+  text-align: center;
+}
+
+.contact address {
+  display: flex;
+  justify-content: space-evenly;
 }
